@@ -91,3 +91,7 @@ Configurações para o sistema de substituição de pneus.
 
 -   `NotifyTime`: Tempo da notificação (em ms).
 -   `ChangeTime`: Tempo total para troca do pneu (em ms).
+
+## 💾 Download
+
+[Download](https://github.com/mri-Qbox-Brasil/mri_Qtyrecontrol)
