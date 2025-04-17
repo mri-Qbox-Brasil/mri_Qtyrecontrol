@@ -1,0 +1,11 @@
+{
+    "tyreBurst": "Pneu %s furado",
+    "changingTyre": "Trocando pneu...",
+    "tyreChanged": "Pneu trocado com sucesso!",
+    "tyreChangeCanceled": "Troca de pneu cancelada!",
+    "noVehicle": "Nenhum veículo próximo!",
+    "noTyreBurst": "Este veículo não tem pneu(s) furado(s).",
+    "toolNeeded": "Você precisa de um(a) %s.",
+    "toolWrecked": "%s está inutilizável.",
+    "changeTyre": "Trocar pneu %s %s"
+}

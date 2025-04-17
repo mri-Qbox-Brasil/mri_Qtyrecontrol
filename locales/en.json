@@ -1,0 +1,11 @@
+{
+    "tyreBurst": "Tire %s burst",
+    "changingTyre": "Changing tire...",
+    "tyreChanged": "Tire successfully changed!",
+    "tyreChangeCanceled": "Tire change canceled!",
+    "noVehicle": "No nearby vehicle!",
+    "noTyreBurst": "This vehicle has no burst tire(s).",
+    "toolNeeded": "You need a %s.",
+    "toolWrecked": "The %s is unusable.",
+    "changeTyre": "Change tire"
+}
