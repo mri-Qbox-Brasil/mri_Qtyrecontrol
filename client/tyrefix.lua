@@ -37,7 +37,7 @@ end
 local function doTyreChange(vehicle, tyre, target_name)
     if doProgressBar() then
         lib.callback(
-            "spx_tyres:server:UseTyre",
+            "mri_Qtyrecontrol:server:UseTyre",
             false,
             function(result)
                 if result then
@@ -53,7 +53,7 @@ local function doTyreChange(vehicle, tyre, target_name)
 end
 
 lib.callback.register(
-    "spx_tyres:client:UseTyre",
+    "mri_Qtyrecontrol:client:UseTyre",
     function()
         local coords = GetEntityCoords(cache.ped)
         local vehicle = lib.getClosestVehicle(coords, 3.0, true)

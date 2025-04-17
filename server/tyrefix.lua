@@ -3,7 +3,7 @@ local ox_inventory = exports.ox_inventory
 
 local function useTyre(event, item, inventory, slot, data)
     lib.callback(
-        "spx_tyres:client:UseTyre",
+        "mri_Qtyrecontrol:client:UseTyre",
         inventory.id,
         function(source)
             return true
@@ -14,7 +14,7 @@ end
 exports("UseTyre", useTyre)
 
 lib.callback.register(
-    "spx_tyres:server:UseTyre",
+    "mri_Qtyrecontrol:server:UseTyre",
     function(source)
         local coords = GetEntityCoords(GetPlayerPed(source))
         local vehicle = lib.getClosestVehicle(coords, 3.0, true)
