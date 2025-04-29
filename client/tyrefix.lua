@@ -1,5 +1,6 @@
 local Config = require "shared.config"
 local Utils = require "client.utils"
+local ox_inventory = exports.ox_inventory
 
 local ox_target = exports.ox_target
 
@@ -76,7 +77,8 @@ lib.callback.register(
             end
 
             if not toolItem then
-                Utils.sendNotify(locale("toolNeeded", toolItem.label))
+                local tItem = ox_inventory:Items(Config.TyreChange.ItemTool.Name)
+                Utils.sendNotify(locale("toolNeeded", tItem and tItem.label or Config.TyreChange.ItemTool.Name))
                 return
             end
 
@@ -92,7 +94,6 @@ lib.callback.register(
 
         for i = 0, 3, 1 do
             local tyre = Utils.getTyre(i)
-            print(tyre)
             if IsVehicleTyreBurst(vehicle, tyre, false) then
                 local target_name = string.format("fix_tyre_%s", tyre)
                 ox_target:addGlobalVehicle(
